@@ -173,23 +173,20 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="壹、写博客"><a href="#壹、写博客" class="headerlink" title="壹、写博客"></a>壹、写博客</h1><p>好像不用写大标题，直接写步骤就好了。</p>
-<ol>
-<li><p>打开git：在桌面点击“Git bash”应用程序</p>
-</li>
-<li><p>进入“hexo”文件夹：<code>cd D:\hexo</code></p>
-</li>
-<li><p>执行新建博客命令：<code>hexo new post &quot;article title&quot;</code></p>
-</li>
-<li><p>看到“hexo\source_posts”多了一个Markdown文档</p>
-</li>
-<li><p>打开文档并编辑，然后保存</p>
-</li>
-<li><p>然后运行生成、部署命令，如下：</p>
-<p> <code>hexo d        //生成，访问http://localhost:4000/</code></p>
-<p> <code>hexo g        //部署，访问github博客网址：https://csandit.github.io/</code></p>
-</li>
-</ol>
-<h1 id="贰、后期在加"><a href="#贰、后期在加" class="headerlink" title="贰、后期在加"></a>贰、后期在加</h1><p>下一期可以介绍如何上传图片和插入图片</p>
+<p>第一步：打开git：在桌面点击“Git bash”应用程序</p>
+<p>第二步：进入“hexo”文件夹：<code>cd D:\hexo</code></p>
+<p>第三步：执行新建博客命令：<code>hexo new post &quot;article title&quot;</code></p>
+<p>第四步：看到“hexo\source_posts”多了一个Markdown文档</p>
+<p>第五步：打开文档并编辑，然后保存</p>
+<p>第六步：然后运行生成、部署命令，如下：</p>
+<pre><code>hexo d        //生成，访问http://localhost:4000/
+//PS：查看是否部署成功，博客板式是否符合要求，启动hexo：hexo s
+//启动后修改一篇博客，刷新网站就能看到修改，而不需要部署
+//启动后要新开一个git窗口，最好提前开启hexo吧
+//密钥是跟351有关的那个
+
+hexo g        //部署，访问github博客网址：https://csandit.github.io/</code></pre><h1 id="贰、后期在加"><a href="#贰、后期在加" class="headerlink" title="贰、后期在加"></a>贰、后期在加</h1><p>下一期可以介绍如何上传图片和插入图片</p>
+<p>在下一期看看怎么加多个标签</p>
 
       
 
@@ -198,6 +195,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -280,6 +288,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">心情</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -480,6 +499,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">心情</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
